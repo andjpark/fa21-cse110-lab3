@@ -9,12 +9,17 @@
         <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
+        <nav>
+        <a href="#">Software Engineering</a></li> >
+        <a href="#">Meetings</a></li> >
+        Software Engineering Meeting 2</li>
+        </nav>
         <header class="page-header">
             <h1>Second Software Engineering Meeting</h1>
             <h2>October 1, 2021</h2>
         </header>
         <img class="fit-picture"
-            src="/media/teamwork.jpg"
+            src="teamwork.jpg"
             alt="Basic teamwork picture">
         <hr>
         <section>
@@ -66,16 +71,75 @@
             </details>
             <p><b>Video clip from meeting 2</b>:</p>
                 <video controls width="250">
-                    <source src="/media/Black screen for 30 seconds.mp4"
+                    <source src="Black screen for 30 seconds.mp4"
                             type="video/mp4">
                 </video>
             <figure>
                 <figcaption><b>Listen to an audio clip from meeting 2</b>:</figcaption>
-                <audio
-                    controls src="/media/Black screen for 30 seconds.mp3">
-                </audio>
+                <audio controls src="Black screen for 30 seconds.mp3"></audio>
             </figure>
-                
+            <hr>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-example">
+                    <label for="ID">Enter your student ID: </label>
+                    <input type="text" name="ID" id="ID" required>
+                </div>
+                <div class="form-example">
+                    <input type="submit" value="Submit!">
+                </div>
+            </form>
+            <br>
+            <form>
+                <fieldset>
+                    <legend>Who will win the NL West Championship?</legend>
+
+                    <input type="radio" id="dodgers" name="baseball team">
+                    <label for="dodgers">Los Angeles Dodgers</label><br/>
+
+                    <input type="radio" id="giants" name="baseball team">
+                    <label for="giants">San Francisco Giants</label><br/>
+                </fieldset>
+            </form>
+            <br>
+            <label for="about">Tell us about yourself:</label>
+            <br>
+            <textarea id="about" name="about" rows="5" cols="33">My name is...
+            </textarea>
+            <br>
+            <br>
+
+            <label for="favorite-sport">Pick your favorite sport:</label>
+            <input list="sports-choices" id="favorite-sport" name="favorite-sport" />
+
+            <datalist id="sports-choices">
+                <option value="Baseball">
+                <option value="Football">
+                <option value="Basketball">
+                <option value="Soccer">
+                <option value="Tennis">
+                <option value="Golf">
+            </datalist>
+            <br>
+            <br>
+            <label for="subject-select">Choose a subject:</label>
+
+            <select name="subjects" id="subject-select">
+                <option value="">Please choose a subject</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="history">History</option>
+            </select>
+
+            <br>
+            <br>
+            <button class="favorite styled" type="button">
+                Add to bookmarks
+            </button>
         </main>
         <hr>
         <footer>
