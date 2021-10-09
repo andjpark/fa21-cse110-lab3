@@ -2,10 +2,7 @@ h1 {
     color: rebeccapurple; /* set main header color to deep purple */
     height: 20px;
 }
-h2 {
-    color: #dda0dd;  /* set date header to light lavender */
-    height: 8mm;
-}
+
 #attendance {
     color: rgb(188,126,242); /* set title to lavender */
 }
@@ -33,19 +30,19 @@ h2 {
     color: rgb(188,126,242); /* set title to lavender */
 }
 .page-header {
-    background-color: lemonchiffon;
+    background-color: lemonchiffon;  /* add background color to the page header */
     width: 28vw;
     display: block;
 }
 .attending {
-    font-size: 1em;
+    font-size: 1em;  /* change font size of attendance list header */
     height: max-height;
 }
 .covered-topics {
-    font-size: 1rem;
+    font-size: 1rem;  /* change font size of covered topics overview */
     width: max-width;
 }
-.attendance-box {
+.attendance-box {  /* change display properties of box surrounding attendance list */
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 5px;
@@ -57,20 +54,37 @@ h2 {
     display: inline-block;
     position: relative;
 }
-.attending {
+.attending {  /* change display properties of border surrounding attendance list */
     border-width: 5px;
     border-style: solid;
     border-color: lemonchiffon;
     border-radius: 1em;
     margin: 10px 0px 20px 5px;
     padding: 4px 0px 10px 30px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: auto;
+    grid-row-start:auto;
 }
-.covered-topics {
+.covered-topics {  /* change display properties of covered topics summary */
     margin:auto;
+    display: flex;
+    column-gap: 30px;
+    flex-grow: 5;
+    flex-wrap: wrap;
 }
-.foods {
+.foods {  /* center text and import custom font from google */
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
 }
 .fit-picture {
     position: static;
 }
+button:hover {  /* turn button background to purple when hovered */
+    background-color: blueviolet;
+}
+a:active {  /* turn hyperlink green once clicked */
+    color: green;
+}
+
