@@ -3,6 +3,7 @@
     <head>
         <title>Software Engineering Meeting 2</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styling.css">
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -23,8 +24,8 @@
             alt="Basic teamwork picture">
         <hr>
         <section>
-            <p><b>Attendance List:</b></p>
-            <ul>
+            <p id="attendance"><b>Attendance List:</b></p>
+            <ul class="attending">
                 <li>Andrew Park</li>
                 <li>Charlene Rankin</li>
                 <li>Haley Allison</li>
@@ -33,15 +34,15 @@
             </ul>
         </section>
         <hr>
-        <h3>Today's Covered Topics:</h3>
-        <ol>
+        <h3 id="topicsCovered">Today's Covered Topics:</h3>
+        <ol class="covered-topics">
             <li>Software Engineers vs. Developers</li>
             <li>Human-Driven Development</li>
             <li>Keys to Working as a Team</li>
         </ol>
         <main>
             <div>
-                <p><b>Follow up thoughts from meeting 1:</b></p>
+                <p id="followUps"><b>Follow up thoughts from meeting 1:</b></p>
                 <p>As software engineers, we should strive to provide the best and most helpful experience to end users, rather than simply focusing on getting our product to work.<br>
                     Of course, we need our code to work, but coding should be the least of our worries; instead, we should provide a seemless experience. We code for humans, <i>not</i> for computers.
                 </p>
@@ -50,7 +51,7 @@
             </div>
 
             <div>
-                <p><b>Summarized thoughts from meeting 2:</b></p>
+                <p id="summary"><b>Summarized thoughts from meeting 2:</b></p>
                 <p>For the best team working experience, we cannot only look to build our relationships and connections in the workplace, but <em>outside</em> of work, too. Facilitating a healthy<br>
                     dynamic between each other outside of work is keen to building strong team chemistry in order to better our workflow. 
                 </p>
@@ -58,24 +59,24 @@
             </div>
 
             <div>
-                <p><b>Unanswered questions and comments:</b></p>
+                <p id="unanswered"><b>Unanswered questions and comments:</b></p>
                 <ul>
-                    <li>What if I simply do not get along with someone assigned to my team? What is the <strong>workaround our inherent incompatibility</strong>?</li>
-                    <li>Would a strong friendship between two "teammates" be <strong>detrimental</strong> to the work produced?</li>
-                    <li>If our lives and dynamics with each other are grounded upon the work we do, how can we <strong>ignore these boundaries</strong> when trying to establish a personal connection?</li>
+                    <li>What if I simply do not get along with someone assigned to my team? What is the <strong style="background-color:#6980f0">workaround our inherent incompatibility</strong>?</li>
+                    <li>Would a strong friendship between two "teammates" be <strong style="background-color:#f06772">detrimental</strong> to the work produced?</li>
+                    <li>If our lives and dynamics with each other are grounded upon the work we do, how can we <strong style="background-color:#f5e57d">ignore these boundaries</strong> when trying to establish a personal connection?</li>
                 </ul>
             </div>
             <details>
-                <summary>Food for Thought</summary>
+                <summary id="food">Food for Thought</summary>
                 To be a good software engineer, you must first be a good <strong>human</strong>.
             </details>
-            <p><b>Video clip from meeting 2</b>:</p>
+            <p id="video"><b>Video clip from meeting 2</b>:</p>
                 <video controls width="250">
                     <source src="Black_screen_for_30_seconds.mp4"
                             type="video/mp4">
                 </video>
             <figure>
-                <figcaption><b>Listen to an audio clip from meeting 2</b>:</figcaption>
+                <figcaption id="audio"><b>Listen to an audio clip from meeting 2</b>:</figcaption>
                 <audio controls src="Black_screen_for_30_seconds.mp3"></audio>
             </figure>
             <hr>
