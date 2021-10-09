@@ -3,15 +3,12 @@ h1 {
     height: 20px;
 }
 
-#attendance {
+#attendance, #followUps {
     color: rgb(188,126,242); /* set title to lavender */
 }
 #topicsCovered {
     color: hsl(272,82%,72%); /* set title to lavender */
     height: .5cm;
-}
-#followUps {
-    color: rgb(188,126,242); /* set title to lavender */
 }
 #summary {
     color: rgb(188,126,242); /* set title to lavender */
@@ -19,7 +16,7 @@ h1 {
 #unanswered {
     color: rgb(188,126,242); /* set title to lavender */
 }
-#food {
+details > summary {
     color: rgb(188,126,242); /* set title to lavender */
     text-decoration: underline;
 }
@@ -34,7 +31,7 @@ h1 {
     width: 28vw;
     display: block;
 }
-.attending {
+ul {
     font-size: 1em;  /* change font size of attendance list header */
     height: max-height;
 }
@@ -87,4 +84,17 @@ button:hover {  /* turn button background to purple when hovered */
 a:active {  /* turn hyperlink green once clicked */
     color: green;
 }
+*.form-example {  /*add universal element selector */
+    color: rgb(188,126,242);
+}
+a[href^="#"] {  /* add attribute selector */
+    background-color: silver;
+}
 
+ul > li:first-of-type + li { /* add child and adjacent sibling combinator */
+    color: orange;
+}
+
+form ~ label { /* add general sibling combinator */
+    color: #80d194;
+}
