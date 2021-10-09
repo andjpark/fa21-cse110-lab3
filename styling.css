@@ -24,6 +24,7 @@ h2 {
 }
 #food {
     color: rgb(188,126,242); /* set title to lavender */
+    text-decoration: underline;
 }
 #video {
     color: rgb(188,126,242); /* set title to lavender */
@@ -40,4 +41,28 @@ h2 {
 }
 .covered-topics {
     font-size: 1rem;
+}
+.attendance-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.attending {
+    border-width: 5px;
+    border-style: solid;
+    border-color: lemonchiffon;
+    border-radius: 1em;
+    margin: 10px 0px 20px 5px;
+    padding: 4px 0px 10px 30px;
+}
+.covered-topics {
+    margin:auto;
+}
+.foods {
+    text-align: center;
 }
